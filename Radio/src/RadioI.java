@@ -9,20 +9,24 @@
  * @author Gustavo
  */
 public interface RadioI {
-    public void frecAdelante();
+    public String frecAdelante();
     
-    public void frecAtras();
+    public String frecAtras();
     
-    public void prender();
+    public boolean prender();
     
-    public void apagar();
+    public boolean apagar();
     
-    public void cambioFrecuencia();
+    public String cambioFrecuencia();
     
-    public void guardarFrecAm();
+    public void guardarEstacionActual(int pos);
     
-    public void guardarFrecFm();
+    public String obtenerEstacion(int pos);
     
-    public void mostrarEstacion();
+    public String mostrarEstacion();
+    
+    public boolean estaPrendido();
+    
+    public String obtenerEstado();
         
 }

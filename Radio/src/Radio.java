@@ -17,36 +17,24 @@ public class Radio implements RadioI {
 	this.fm = fm;
 	}
 
-    public void frecAdelante(){
-	      System.out.println("...");
-	}
-
-    public void frecAtras(){
-	      System.out.println("...");
-	}
-
-    public void prender(){
-	      System.out.println("...");
-	}
-
-    public void apagar(){
-	      System.out.println("...");
-	}
-
-    public void cambioFrecuencia(){
-	      System.out.println("...");
-	}
-
-    public void guardarFrecAm(){
-	      System.out.println("...");
-	}
-
-    public void guardarFrecFm(){
-	      System.out.println("...");
-	}
-
-    public void mostrarEstacion(){
-	      System.out.println("...");
-	}
+    public String frecAdelante();
+    
+    public String frecAtras();
+    
+    public boolean prender();
+    
+    public boolean apagar();
+    
+    public String cambioFrecuencia();
+    
+    public void guardarEstacionActual(int pos);
+    
+    public String obtenerEstacion(int pos);
+    
+    public String mostrarEstacion();
+    
+    public boolean estaPrendido();
+    
+    public String obtenerEstado();
     
 }
