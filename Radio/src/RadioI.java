@@ -8,30 +8,21 @@
  *
  * @author Gustavo
  */
-public class RadioI {
-    public void frecAdelante(){
-        return;
-    }
-    public void frecAtras(){
-        return;
-    }
-    public void prender(){
-        return;
-    }
-    public void apagar(){
-        return;
-    }
-    public void cambioFrecuencia(){
-        return;
-    }
-    public void guardarFrecAm(){
-        return;
-    }
-    public void guardarFrecFm(){
-        return;
-    }
-     public void mostrarEstacion(){
-        return;
-    }
-    	
+public interface RadioI {
+    public void frecAdelante();
+    
+    public void frecAtras();
+    
+    public void prender();
+    
+    public void apagar();
+    
+    public void cambioFrecuencia();
+    
+    public void guardarFrecAm();
+    
+    public void guardarFrecFm();
+    
+    public void mostrarEstacion();
+        
 }
