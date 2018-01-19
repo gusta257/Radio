@@ -46,7 +46,9 @@ public class GUI extends javax.swing.JFrame {
         jButton16 = new javax.swing.JButton();
         jButton17 = new javax.swing.JButton();
         jButton18 = new javax.swing.JButton();
-        jCheckBox1 = new javax.swing.JCheckBox();
+        jLabel1 = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
+        jButton19 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -102,52 +104,52 @@ public class GUI extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 60, -1));
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 60, -1));
 
         jButton6.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jButton6.setText("2");
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 60, -1));
+        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, 60, -1));
 
         jButton7.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jButton7.setText("3");
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 60, -1));
+        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, 60, -1));
 
         jButton8.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jButton8.setText("4");
-        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 140, 60, -1));
+        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, 60, -1));
 
         jButton9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jButton9.setText("5");
-        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 140, 60, -1));
+        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 200, 60, -1));
 
         jButton10.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jButton10.setText("6");
-        getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, 60, -1));
+        getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 200, 60, -1));
 
         jButton11.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jButton11.setText("7");
-        getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 60, 40));
+        getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 60, 40));
 
         jButton12.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jButton12.setText("8");
-        getContentPane().add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 180, 60, 40));
+        getContentPane().add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 240, 60, 40));
 
         jButton13.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jButton13.setText("9");
-        getContentPane().add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, 60, 40));
+        getContentPane().add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 240, 60, 40));
 
         jButton14.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jButton14.setText("10");
         jButton14.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        getContentPane().add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 180, 60, 40));
+        getContentPane().add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 240, 60, 40));
 
         jButton15.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         jButton15.setText("11");
-        getContentPane().add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 180, 60, 40));
+        getContentPane().add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 240, 60, 40));
 
         jButton16.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         jButton16.setText("12");
-        getContentPane().add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 180, 60, 40));
+        getContentPane().add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 240, 60, 40));
 
         jButton17.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jButton17.setText("AM");
@@ -167,14 +169,17 @@ public class GUI extends javax.swing.JFrame {
         });
         getContentPane().add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 180, 40));
 
-        jCheckBox1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jCheckBox1.setText("Guardar Estación");
-        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 360, 40));
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel1.setText("Ingrese el numero en el cual \ndesea guardar la estacion ");
+        jLabel1.setVerifyInputWhenFocusTarget(false);
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, 20));
+
+        jTextField2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 180, 50));
+
+        jButton19.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jButton19.setText("Guardar");
+        getContentPane().add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 140, 180, 50));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -224,10 +229,6 @@ public class GUI extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
-
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox1ActionPerformed
     
     /**
      * @param args the command line arguments
@@ -276,6 +277,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton18;
+    private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -284,8 +286,9 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
-    private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 
 }
