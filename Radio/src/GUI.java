@@ -28,261 +28,258 @@ public class GUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
-        jButton18 = new javax.swing.JButton();
+        btnON = new javax.swing.JButton();
+        btnOFF = new javax.swing.JButton();
+        tfEstacion = new javax.swing.JTextField();
+        btnAtras = new javax.swing.JButton();
+        btnAdelante = new javax.swing.JButton();
+        btn1 = new javax.swing.JButton();
+        btn2 = new javax.swing.JButton();
+        btn3 = new javax.swing.JButton();
+        btn4 = new javax.swing.JButton();
+        btn5 = new javax.swing.JButton();
+        btn6 = new javax.swing.JButton();
+        btn7 = new javax.swing.JButton();
+        btn8 = new javax.swing.JButton();
+        btn9 = new javax.swing.JButton();
+        btn10 = new javax.swing.JButton();
+        btn11 = new javax.swing.JButton();
+        btn12 = new javax.swing.JButton();
+        btnAM = new javax.swing.JButton();
+        btnFM = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jButton19 = new javax.swing.JButton();
+        tfLugar = new javax.swing.JTextField();
+        btnGuardar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton1.setText("ON");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnON.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnON.setText("ON");
+        btnON.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnONActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 60, 40));
+        getContentPane().add(btnON, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 60, 40));
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton2.setText("OFF");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnOFF.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnOFF.setText("OFF");
+        btnOFF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnOFFActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 10, 60, 40));
+        getContentPane().add(btnOFF, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 10, 60, 40));
 
-        jTextField1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        tfEstacion.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        tfEstacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                tfEstacionActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 10, 120, 40));
+        getContentPane().add(tfEstacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 10, 120, 40));
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jButton3.setText("<");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnAtras.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        btnAtras.setText("<");
+        btnAtras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnAtrasActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 60, 40));
+        getContentPane().add(btnAtras, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 60, 40));
 
-        jButton4.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jButton4.setText(">");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btnAdelante.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        btnAdelante.setText(">");
+        btnAdelante.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btnAdelanteActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 10, 60, 40));
+        getContentPane().add(btnAdelante, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 10, 60, 40));
 
-        jButton5.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jButton5.setText("1");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        btn1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        btn1.setText("1");
+        btn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                btn1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 60, -1));
+        getContentPane().add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 60, -1));
 
-        jButton6.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jButton6.setText("2");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        btn2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        btn2.setText("2");
+        btn2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                btn2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, 60, -1));
+        getContentPane().add(btn2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, 60, -1));
 
-        jButton7.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jButton7.setText("3");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        btn3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        btn3.setText("3");
+        btn3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                btn3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, 60, -1));
+        getContentPane().add(btn3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, 60, -1));
 
-        jButton8.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jButton8.setText("4");
-        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, 60, -1));
+        btn4.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        btn4.setText("4");
+        getContentPane().add(btn4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, 60, -1));
 
-        jButton9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jButton9.setText("5");
-        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 200, 60, -1));
+        btn5.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        btn5.setText("5");
+        getContentPane().add(btn5, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 200, 60, -1));
 
-        jButton10.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jButton10.setText("6");
-        getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 200, 60, -1));
+        btn6.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        btn6.setText("6");
+        getContentPane().add(btn6, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 200, 60, -1));
 
-        jButton11.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jButton11.setText("7");
-        getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 60, 40));
+        btn7.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        btn7.setText("7");
+        getContentPane().add(btn7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 60, 40));
 
-        jButton12.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jButton12.setText("8");
-        getContentPane().add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 240, 60, 40));
+        btn8.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        btn8.setText("8");
+        getContentPane().add(btn8, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 240, 60, 40));
 
-        jButton13.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jButton13.setText("9");
-        getContentPane().add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 240, 60, 40));
+        btn9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        btn9.setText("9");
+        getContentPane().add(btn9, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 240, 60, 40));
 
-        jButton14.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jButton14.setText("10");
-        jButton14.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        getContentPane().add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 240, 60, 40));
+        btn10.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        btn10.setText("10");
+        btn10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(btn10, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 240, 60, 40));
 
-        jButton15.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        jButton15.setText("11");
-        getContentPane().add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 240, 60, 40));
+        btn11.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        btn11.setText("11");
+        getContentPane().add(btn11, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 240, 60, 40));
 
-        jButton16.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        jButton16.setText("12");
-        getContentPane().add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 240, 60, 40));
+        btn12.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        btn12.setText("12");
+        getContentPane().add(btn12, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 240, 60, 40));
 
-        jButton17.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jButton17.setText("AM");
-        jButton17.addActionListener(new java.awt.event.ActionListener() {
+        btnAM.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        btnAM.setText("AM");
+        btnAM.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton17ActionPerformed(evt);
+                btnAMActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 60, 180, 40));
+        getContentPane().add(btnAM, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 60, 180, 40));
 
-        jButton18.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jButton18.setText("FM");
-        jButton18.addActionListener(new java.awt.event.ActionListener() {
+        btnFM.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        btnFM.setText("FM");
+        btnFM.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton18ActionPerformed(evt);
+                btnFMActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 180, 40));
+        getContentPane().add(btnFM, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 180, 40));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setText("Ingrese el numero en el cual \ndesea guardar la estacion ");
         jLabel1.setVerifyInputWhenFocusTarget(false);
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, 20));
 
-        jTextField2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        tfLugar.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        tfLugar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                tfLugarActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 180, 50));
+        getContentPane().add(tfLugar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 180, 50));
 
-        jButton19.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton19.setText("Guardar");
-        jButton19.addActionListener(new java.awt.event.ActionListener() {
+        btnGuardar.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        btnGuardar.setText("Guardar");
+        btnGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton19ActionPerformed(evt);
+                btnGuardarActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 140, 180, 50));
+        getContentPane().add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 140, 180, 50));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnOFFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOFFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnOFFActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnONActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnONActionPerformed
         // TODO add your handling code here:
-        jTextField1.setText(rad.cambioFrecuencia());
+        tfEstacion.setText(rad.cambioFrecuencia());
+    }//GEN-LAST:event_btnONActionPerformed
+
+    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
+        // TODO add your handling code here:
+        //rad.setFrecA(frecA);
+        String est = rad.obtenerEstacion(Integer.parseInt(tfLugar.getText()));
+        tfEstacion.setText(est);
         
-        
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btn1ActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void btnAdelanteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdelanteActionPerformed
         // TODO add your handling code here:
-        rad.setFrecA(frecA);
-        System.out.println(rad.mostrarEstacion());
-        //jTextField1.setText(rad.boton(Integer.parseInt(jTextField2.getText())));
-        jTextField1.setText(rad.mostrarEstacion());
-        
-    }//GEN-LAST:event_jButton5ActionPerformed
+        tfEstacion.setText(rad.frecAdelante());
+    }//GEN-LAST:event_btnAdelanteActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void btnAtrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasActionPerformed
         // TODO add your handling code here:
-        jTextField1.setText(rad.frecAdelante());
-    }//GEN-LAST:event_jButton4ActionPerformed
+        tfEstacion.setText(rad.frecAtras());
+    }//GEN-LAST:event_btnAtrasActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-        jTextField1.setText(rad.frecAtras());
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+    private void btnFMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFMActionPerformed
         // TODO add your handling code here:
          eFrec="FM";
          rad.setEFrec(eFrec);
-         jTextField1.setText(rad.cambioFrecuencia());
-    }//GEN-LAST:event_jButton18ActionPerformed
+         tfEstacion.setText(rad.cambioFrecuencia());
+    }//GEN-LAST:event_btnFMActionPerformed
 
-    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+    private void btnAMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAMActionPerformed
         eFrec="AM";   
         rad.setEFrec(eFrec);
-        jTextField1.setText(rad.cambioFrecuencia());
-    }//GEN-LAST:event_jButton17ActionPerformed
+        tfEstacion.setText(rad.cambioFrecuencia());
+    }//GEN-LAST:event_btnAMActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void tfEstacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfEstacionActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_tfEstacionActionPerformed
 
-    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+    private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
         // TODO add your handling code here:
-        frecA = jTextField1.getText();
+        
+        frecA = tfEstacion.getText();
         rad.setFrecA(frecA);
-        rad.guardarEstacionActual(Integer.parseInt(jTextField2.getText()));
+        rad.guardarEstacionActual(Integer.parseInt(tfLugar.getText()));
          
          //System.out.println(Integer.parseInt(jButton19.getText()));
        
-    }//GEN-LAST:event_jButton19ActionPerformed
+    }//GEN-LAST:event_btnGuardarActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void tfLugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfLugarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_tfLugarActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
             // TODO add your handling code here:
-        rad.setFrecA(frecA);
+        /*rad.setFrecA(frecA);
         System.out.println(rad.mostrarEstacion());
-        System.out.println("esta debe ser la fecuencia actual"+frecA);
-        //jTextField1.setText(rad.boton(Integer.parseInt(jTextField2.getText())));
-        jTextField1.setText(rad.mostrarEstacion()); 
-    }//GEN-LAST:event_jButton6ActionPerformed
-
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // TODO add your handling code here:
-        rad.setFrecA(frecA);
-        System.out.println(rad.mostrarEstacion());
+        //System.out.println("esta debe ser la fecuencia actual"+frecA);
+        tfEstacion.setText(rad.mostrarEstacion()); */
         
-        //jTextField1.setText(rad.boton(Integer.parseInt(jTextField2.getText())));
-        jTextField1.setText(rad.mostrarEstacion());
-    }//GEN-LAST:event_jButton7ActionPerformed
+        String est = rad.obtenerEstacion(Integer.parseInt(tfLugar.getText()));
+        tfEstacion.setText(est);
+    }//GEN-LAST:event_btn2ActionPerformed
+
+    private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
+        // TODO add your handling code here:
+        String est = rad.obtenerEstacion(Integer.parseInt(tfLugar.getText()));
+        tfEstacion.setText(est);
+    }//GEN-LAST:event_btn3ActionPerformed
     
     /**
      * @param args the command line arguments
@@ -321,28 +318,28 @@ public class GUI extends javax.swing.JFrame {
  
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
+    private javax.swing.JButton btn1;
+    private javax.swing.JButton btn10;
+    private javax.swing.JButton btn11;
+    private javax.swing.JButton btn12;
+    private javax.swing.JButton btn2;
+    private javax.swing.JButton btn3;
+    private javax.swing.JButton btn4;
+    private javax.swing.JButton btn5;
+    private javax.swing.JButton btn6;
+    private javax.swing.JButton btn7;
+    private javax.swing.JButton btn8;
+    private javax.swing.JButton btn9;
+    private javax.swing.JButton btnAM;
+    private javax.swing.JButton btnAdelante;
+    private javax.swing.JButton btnAtras;
+    private javax.swing.JButton btnFM;
+    private javax.swing.JButton btnGuardar;
+    private javax.swing.JButton btnOFF;
+    private javax.swing.JButton btnON;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField tfEstacion;
+    private javax.swing.JTextField tfLugar;
     // End of variables declaration//GEN-END:variables
 
 }

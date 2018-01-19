@@ -33,16 +33,16 @@ public class Radio implements RadioI {
         this.frecA= frecA;
     }
 
-public String cambioFrecuencia(){//hola
+    public String cambioFrecuencia(){//hola
 
-    if(eFrec=="AM"){
-        frecA="530";
-    }else{
-        eFrec="FM";
-        frecA="87.90";
+        if(eFrec=="AM"){
+            frecA="530";
+        }else{
+            eFrec="FM";
+            frecA="87.90";
+        }
+        return frecA;
     }
-    return frecA;
-}
 
     public String frecAdelante(){
         float frecAF=Float.parseFloat(frecA);
@@ -112,7 +112,9 @@ public String cambioFrecuencia(){//hola
     }
     
     public String obtenerEstacion(int pos){
-        String estacion = botones[pos-1];
+        
+        String estacion=botones[pos-1];
+        frecA = botones[pos-1];
         return estacion;
     }
     
