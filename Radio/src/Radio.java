@@ -107,7 +107,7 @@ public String cambioFrecuencia(){//hola
  
     
      public void guardarEstacionActual(int pos){
-         System.out.println("funciona");
+        // System.out.println("funciona");
          botones[pos-1]=frecA;
     }
     
@@ -119,10 +119,6 @@ public String cambioFrecuencia(){//hola
     public String mostrarEstacion(){
         String estado = this.frecA;
         return estado;
-    }
-     public String boton(int pos){
-        String estac = botones[pos];
-        return estac;
     }
     
     public boolean estaPrendido(){
@@ -140,9 +136,7 @@ public String cambioFrecuencia(){//hola
         }
         return estado;
     }
-    public void guardar(int posicion, String frecuenciaA){
-        botones[posicion] = frecuenciaA;
-    }
+    
     
     
 }

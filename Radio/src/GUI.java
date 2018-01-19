@@ -213,11 +213,10 @@ public class GUI extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-        frecA = jTextField1.getText();
         rad.setFrecA(frecA);
         System.out.println(rad.mostrarEstacion());
         //jTextField1.setText(rad.boton(Integer.parseInt(jTextField2.getText())));
-        //jTextField1.setText(rad.mostrarEstacion());
+        jTextField1.setText(rad.mostrarEstacion());
         
     }//GEN-LAST:event_jButton5ActionPerformed
 
@@ -252,7 +251,6 @@ public class GUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         frecA = jTextField1.getText();
         rad.setFrecA(frecA);
-        
         rad.guardarEstacionActual(Integer.parseInt(jTextField2.getText()));
          
          //System.out.println(Integer.parseInt(jButton19.getText()));
