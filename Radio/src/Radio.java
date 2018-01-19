@@ -26,7 +26,7 @@ public class Radio implements RadioI {
         this.eFrec = eFrec;
     }
 
-public String cambioFrecuencia(){
+public String cambioFrecuencia(){//hola
 
     if(eFrec=="AM"){
         frecA="530";
