@@ -118,6 +118,11 @@ public class GUI extends javax.swing.JFrame {
 
         jButton7.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jButton7.setText("3");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, 60, -1));
 
         jButton8.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
@@ -263,9 +268,21 @@ public class GUI extends javax.swing.JFrame {
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
             // TODO add your handling code here:
+        rad.setFrecA(frecA);
         System.out.println(rad.mostrarEstacion());
-        jTextField1.setText(rad.mostrarEstacion());
+        System.out.println("esta debe ser la fecuencia actual"+frecA);
+        //jTextField1.setText(rad.boton(Integer.parseInt(jTextField2.getText())));
+        jTextField1.setText(rad.mostrarEstacion()); 
     }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+        rad.setFrecA(frecA);
+        System.out.println(rad.mostrarEstacion());
+        
+        //jTextField1.setText(rad.boton(Integer.parseInt(jTextField2.getText())));
+        jTextField1.setText(rad.mostrarEstacion());
+    }//GEN-LAST:event_jButton7ActionPerformed
     
     /**
      * @param args the command line arguments
