@@ -54,8 +54,7 @@ public String cambioFrecuencia(){
             if(eFrec=="FM"){
                 System.out.println(frecAF);
                 if(frecAF==107.9){
-                   
-                 
+         
                     frecA="87.90";
                 }else{
                     
@@ -81,7 +80,7 @@ public String cambioFrecuencia(){
             }
         }
         if(eFrec=="FM"){
-            if(frecAF==87.90){
+            if(frecAF==87.70){
                 frecA="107.89";
             }else{
                 frecAF-=0.2;
