@@ -6,7 +6,8 @@
 
 /**
  *
- * @author Gustavo
+ * @author Gustavo De Leon 17085
+ * @author Luis Esturban 17256
  */
 public class Radio implements RadioI {
     private boolean am = true;
