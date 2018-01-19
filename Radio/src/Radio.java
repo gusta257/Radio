@@ -14,7 +14,7 @@ public class Radio implements RadioI {
     private boolean encendido = true;
     private String frecA;
     private String frecuenciaA= " ";
-    private String eFrec;
+    private String eFrec= "FM";
     private String[] botones= new String[12];
     private int pos =0;
     
@@ -40,14 +40,15 @@ public String cambioFrecuencia(){
                 frecA=frecAF+"";
                 frecA = String.format("%.2f", frecAF);
             }
-        }
-        if(eFrec=="FM"){
-            if(frecAF==107.89){
-                frecA="87.90";
-            }else{
-                frecAF+=0.2;
-                frecA=frecAF+"";
-                frecA = String.format("%.2f", frecAF);
+        }else{
+            if(eFrec=="FM"){
+                if(frecAF==107.89){
+                    frecA="87.90";
+                }else{
+                    frecAF+=0.2;
+                    frecA=frecAF+"";
+                    frecA = String.format("%.2f", frecAF);
+                }
             }
         }
         return frecA;
@@ -82,6 +83,7 @@ public String cambioFrecuencia(){
         frecA = "87.90";
         return encendido;
     }
+    
     public boolean apagar(){
         encendido = false;
         return encendido;
