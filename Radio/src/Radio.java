@@ -22,7 +22,7 @@ public class Radio implements RadioI {
      public String getEFrec() {
         return eFrec;
     }
-
+// tu gfa
     public void setEFrec(String eFrec) {
         this.eFrec = eFrec;
     }
@@ -69,7 +69,7 @@ public class Radio implements RadioI {
         }
         return frecA;
                 
-    }
+    } //tu jefa
     
     public String frecAtras(){
          float frecAF=Float.parseFloat(frecA);
@@ -93,7 +93,7 @@ public class Radio implements RadioI {
         }
         return frecA;
     }
-    
+    // tu jefa
     public boolean prender(){
         encendido = true;
         frecA = "87.90";
