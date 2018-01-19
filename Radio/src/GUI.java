@@ -70,6 +70,11 @@ public class GUI extends javax.swing.JFrame {
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 10, 60, 40));
 
         jTextField1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 10, 120, 40));
 
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
@@ -164,6 +169,11 @@ public class GUI extends javax.swing.JFrame {
 
         jCheckBox1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jCheckBox1.setText("Guardar Estación");
+        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 360, 40));
 
         pack();
@@ -182,6 +192,9 @@ public class GUI extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
+       if(jCheckBox1.isSelected()){
+           rad.guardar(jButton5.getComponentCount(), jTextField1.getSelectedText());
+       }else jTextField1.setText(rad.mostrarEstacion());
         
     }//GEN-LAST:event_jButton5ActionPerformed
 
@@ -207,6 +220,14 @@ public class GUI extends javax.swing.JFrame {
     rad.setEFrec(eFrec);
    jTextField1.setText(rad.cambioFrecuencia());
     }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox1ActionPerformed
     
     /**
      * @param args the command line arguments
