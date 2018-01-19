@@ -10,6 +10,7 @@
  */
 public class GUI extends javax.swing.JFrame {
     private Radio rad;
+    private String eFrec="";
 
     /** Creates new form GUI */
     public GUI() {
@@ -145,6 +146,11 @@ public class GUI extends javax.swing.JFrame {
 
         jButton17.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jButton17.setText("AM");
+        jButton17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton17ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 60, 180, 40));
 
         jButton18.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
@@ -191,8 +197,16 @@ public class GUI extends javax.swing.JFrame {
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
         // TODO add your handling code here:
-        rad.cambioFrecuencia();
+         eFrec="FM";
+         rad.setEFrec(eFrec);
+   jTextField1.setText(rad.cambioFrecuencia());
     }//GEN-LAST:event_jButton18ActionPerformed
+
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+    eFrec="AM";   
+    rad.setEFrec(eFrec);
+   jTextField1.setText(rad.cambioFrecuencia());
+    }//GEN-LAST:event_jButton17ActionPerformed
     
     /**
      * @param args the command line arguments
