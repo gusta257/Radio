@@ -37,36 +37,37 @@ public String cambioFrecuencia(){
     return frecA;
 }
 
-public String frecAdelante(){
-    float frecAF=Float.parseFloat(frecA);
-
-    if(eFrec=="AM"){
-        if(frecAF==1610){
-
-            frecA="530";
-        }else{
-            frecAF+=10;
-            frecA=frecAF+"";
-            frecA = String.format("%.2f", frecAF);
-        }
-    }else{
-
-        if(eFrec=="FM"){
-            System.out.println(frecAF);
-            if(frecAF!=107.9){
-                frecAF+=0.2;
+    public String frecAdelante(){
+        float frecAF=Float.parseFloat(frecA);
+        
+        if(eFrec=="AM"){
+            if(frecAF==1610){
+                
+                frecA="530";
+            }else{
+                frecAF+=10;
                 frecA=frecAF+"";
                 frecA = String.format("%.2f", frecAF);
-
-            }else{
-                frecA="87.90";
-
+            }
+        }else{
+           
+            if(eFrec=="FM"){
+                System.out.println(frecAF);
+                if(frecAF==107.9){
+                   
+                 
+                    frecA="87.90";
+                }else{
+                    
+                    frecAF+=0.2;
+                    frecA=frecAF+"";
+                    frecA = String.format("%.2f", frecAF);
+                }
             }
         }
+        return frecA;
+                
     }
-    return frecA;
-
-}
     
     public String frecAtras(){
          float frecAF=Float.parseFloat(frecA);
