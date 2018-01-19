@@ -14,10 +14,17 @@ public class Radio implements RadioI {
     private boolean encendido = true;
     private String frecA;
     private String frecuenciaA= " ";
-    private String eFrec= "FM";
+    private String eFrec;
     private String[] botones= new String[12];
     private int pos =0;
     
+     public String getEFrec() {
+        return eFrec;
+    }
+
+    public void setEFrec(String eFrec) {
+        this.eFrec = eFrec;
+    }
 
 public String cambioFrecuencia(){
 
