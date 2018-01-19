@@ -9,15 +9,14 @@
  * @author Gustavo
  */
 public class Radio implements RadioI {
-    private String am;
-    private String fm;
+    private boolean am = true;
+    private boolean fm = true;
+    private boolean encendido = true;
     private String frecA;
+    private String frecuenciaA= " ";
     private String eFrec;
+    private String[] botones= new String[12];
 
-    public Radio(String am, String fm){
-        this.am = am;
-	this.fm = fm;
-	}
 public String cambioFrecuencia(){
 
     if(eFrec=="AM"){
@@ -82,14 +81,40 @@ public String cambioFrecuencia(){
     
  
     
-    public void guardarEstacionActual(int pos);
+     public void guardarEstacionActual(int pos){
+        
+    }
     
-    public String obtenerEstacion(int pos);
+    public String obtenerEstacion(int pos){
+        String estacion = botones[pos];
+        return estacion;
+    }
     
-    public String mostrarEstacion();
+    public String mostrarEstacion(){
+        String estado = obtenerEstacion(pos);
+        return estado;
+    }
     
-    public boolean estaPrendido();
+    public boolean estaPrendido(){
+        encendido = true;
+        return encendido;
+    }
     
-    public String obtenerEstado();
+    public String obtenerEstado(){
+        String estado = "";
+        if(cambioFrecuencia()== "am"){
+            estado = "am";
+        }
+        else{
+            estado = "fm";        
+        }
+        return estado;
+    }
+    public void guardar(int posicion, String frecuenciaA){
+        if(posicion<11){
+            botones[posicion] = frecuenciaA;
+        }
+        
+    }
     
 }

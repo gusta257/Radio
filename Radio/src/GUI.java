@@ -9,10 +9,12 @@
  * @author Luis
  */
 public class GUI extends javax.swing.JFrame {
+    private Radio rad;
 
     /** Creates new form GUI */
     public GUI() {
         initComponents();
+        rad = new Radio();
     }
 
     /** This method is called from within the constructor to
@@ -50,6 +52,11 @@ public class GUI extends javax.swing.JFrame {
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton1.setText("ON");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 60, 40));
 
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -74,6 +81,11 @@ public class GUI extends javax.swing.JFrame {
 
         jButton5.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jButton5.setText("1");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 60, -1));
 
         jButton6.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
@@ -140,6 +152,16 @@ public class GUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_jButton5ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -174,6 +196,7 @@ public class GUI extends javax.swing.JFrame {
             }
         });
     }
+ 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
