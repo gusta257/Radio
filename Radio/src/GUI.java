@@ -252,10 +252,13 @@ public class GUI extends javax.swing.JFrame {
 
     private void btnOFFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOFFActionPerformed
         // TODO add your handling code here:
+        rad.apagar();
+        tfEstacion.setText("");
     }//GEN-LAST:event_btnOFFActionPerformed
 
     private void btnONActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnONActionPerformed
         // TODO add your handling code here:
+        rad.prender();
         tfEstacion.setText(rad.cambioFrecuencia());
     }//GEN-LAST:event_btnONActionPerformed
 
