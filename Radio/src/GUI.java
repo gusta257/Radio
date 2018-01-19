@@ -127,39 +127,84 @@ public class GUI extends javax.swing.JFrame {
 
         btn4.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         btn4.setText("4");
+        btn4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, 60, -1));
 
         btn5.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         btn5.setText("5");
+        btn5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn5ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn5, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 200, 60, -1));
 
         btn6.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         btn6.setText("6");
+        btn6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn6ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn6, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 200, 60, -1));
 
         btn7.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         btn7.setText("7");
+        btn7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn7ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 60, 40));
 
         btn8.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         btn8.setText("8");
+        btn8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn8ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn8, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 240, 60, 40));
 
         btn9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         btn9.setText("9");
+        btn9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn9ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn9, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 240, 60, 40));
 
         btn10.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         btn10.setText("10");
         btn10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn10ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn10, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 240, 60, 40));
 
         btn11.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         btn11.setText("11");
+        btn11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn11ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn11, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 240, 60, 40));
 
         btn12.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         btn12.setText("12");
+        btn12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn12ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn12, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 240, 60, 40));
 
         btnAM.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
@@ -217,7 +262,7 @@ public class GUI extends javax.swing.JFrame {
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
         // TODO add your handling code here:
         //rad.setFrecA(frecA);
-        String est = rad.obtenerEstacion(Integer.parseInt(tfLugar.getText()));
+        String est = rad.obtenerEstacion(1);
         tfEstacion.setText(est);
         
     }//GEN-LAST:event_btn1ActionPerformed
@@ -271,15 +316,69 @@ public class GUI extends javax.swing.JFrame {
         //System.out.println("esta debe ser la fecuencia actual"+frecA);
         tfEstacion.setText(rad.mostrarEstacion()); */
         
-        String est = rad.obtenerEstacion(Integer.parseInt(tfLugar.getText()));
+        String est = rad.obtenerEstacion(2);
         tfEstacion.setText(est);
     }//GEN-LAST:event_btn2ActionPerformed
 
     private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
         // TODO add your handling code here:
-        String est = rad.obtenerEstacion(Integer.parseInt(tfLugar.getText()));
+        String est = rad.obtenerEstacion(3);
         tfEstacion.setText(est);
     }//GEN-LAST:event_btn3ActionPerformed
+
+    private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
+        // TODO add your handling code here:
+        String est = rad.obtenerEstacion(4);
+        tfEstacion.setText(est);
+    }//GEN-LAST:event_btn4ActionPerformed
+
+    private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
+        // TODO add your handling code here:
+        String est = rad.obtenerEstacion(5);
+        tfEstacion.setText(est);
+    }//GEN-LAST:event_btn5ActionPerformed
+
+    private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
+        // TODO add your handling code here:
+        String est = rad.obtenerEstacion(6);
+        tfEstacion.setText(est);
+    }//GEN-LAST:event_btn6ActionPerformed
+
+    private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
+        // TODO add your handling code here:
+        String est = rad.obtenerEstacion(7);
+        tfEstacion.setText(est);
+    }//GEN-LAST:event_btn7ActionPerformed
+
+    private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
+        // TODO add your handling code here:
+        String est = rad.obtenerEstacion(8);
+        tfEstacion.setText(est);
+    }//GEN-LAST:event_btn8ActionPerformed
+
+    private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
+        // TODO add your handling code here:
+        String est = rad.obtenerEstacion(9);
+        tfEstacion.setText(est);
+    }//GEN-LAST:event_btn9ActionPerformed
+
+    private void btn10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn10ActionPerformed
+        // TODO add your handling code here:
+        String est = rad.obtenerEstacion(10);
+        tfEstacion.setText(est);
+    }//GEN-LAST:event_btn10ActionPerformed
+
+    private void btn11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn11ActionPerformed
+        // TODO add your handling code here:
+        String est = rad.obtenerEstacion(11);
+        tfEstacion.setText(est);
+    }//GEN-LAST:event_btn11ActionPerformed
+
+    private void btn12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn12ActionPerformed
+        // TODO add your handling code here:
+        String est = rad.obtenerEstacion(12);
+        tfEstacion.setText(est);
+    }//GEN-LAST:event_btn12ActionPerformed
     
     /**
      * @param args the command line arguments
