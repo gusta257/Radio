@@ -16,6 +16,7 @@ public class Radio implements RadioI {
     private String frecuenciaA= " ";
     private String eFrec;
     private String[] botones= new String[12];
+    
 
 public String cambioFrecuencia(){
 
@@ -75,10 +76,15 @@ public String cambioFrecuencia(){
         return frecA;
     }
     
-    public boolean prender();
-    
-    public boolean apagar();
-    
+    public boolean prender(){
+        encendido = true;
+        frecA = "87.90";
+        return encendido;
+    }
+    public boolean apagar(){
+        encendido = false;
+        return encendido;
+}
  
     
      public void guardarEstacionActual(int pos){
