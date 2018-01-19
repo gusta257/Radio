@@ -26,6 +26,12 @@ public class Radio implements RadioI {
     public void setEFrec(String eFrec) {
         this.eFrec = eFrec;
     }
+    public String getFrecA(){
+        return frecA;
+    }
+    public void setFrecA(String frecA){
+        this.frecA= frecA;
+    }
 
 public String cambioFrecuencia(){//hola
 
@@ -101,6 +107,7 @@ public String cambioFrecuencia(){//hola
  
     
      public void guardarEstacionActual(int pos){
+         System.out.println("funciona");
          botones[pos-1]=frecA;
     }
     
@@ -110,8 +117,12 @@ public String cambioFrecuencia(){//hola
     }
     
     public String mostrarEstacion(){
-        String estado = obtenerEstacion(pos);
+        String estado = this.frecA;
         return estado;
+    }
+     public String boton(int pos){
+        String estac = botones[pos];
+        return estac;
     }
     
     public boolean estaPrendido(){
@@ -132,12 +143,6 @@ public String cambioFrecuencia(){//hola
     public void guardar(int posicion, String frecuenciaA){
         botones[posicion] = frecuenciaA;
     }
-     public String getFrecA() {
-        return frecA;
-    }
-
-    public void setFrecA(String frecA) {
-        this.frecA = frecA;
-    }
+    
     
 }

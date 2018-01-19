@@ -11,6 +11,7 @@
 public class GUI extends javax.swing.JFrame {
     private Radio rad;
     private String eFrec="";
+    private String frecA = "";
 
     /** Creates new form GUI */
     public GUI() {
@@ -108,6 +109,11 @@ public class GUI extends javax.swing.JFrame {
 
         jButton6.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jButton6.setText("2");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, 60, -1));
 
         jButton7.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
@@ -207,8 +213,12 @@ public class GUI extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-        System.out.println("holas");
-        System.out.println(jTextField2.getText());
+        frecA = jTextField1.getText();
+        rad.setFrecA(frecA);
+        System.out.println(rad.mostrarEstacion());
+        //jTextField1.setText(rad.boton(Integer.parseInt(jTextField2.getText())));
+        //jTextField1.setText(rad.mostrarEstacion());
+        
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -225,13 +235,13 @@ public class GUI extends javax.swing.JFrame {
         // TODO add your handling code here:
          eFrec="FM";
          rad.setEFrec(eFrec);
-   jTextField1.setText(rad.cambioFrecuencia());
+         jTextField1.setText(rad.cambioFrecuencia());
     }//GEN-LAST:event_jButton18ActionPerformed
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
-    eFrec="AM";   
-    rad.setEFrec(eFrec);
-   jTextField1.setText(rad.cambioFrecuencia());
+        eFrec="AM";   
+        rad.setEFrec(eFrec);
+        jTextField1.setText(rad.cambioFrecuencia());
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
@@ -240,8 +250,10 @@ public class GUI extends javax.swing.JFrame {
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
         // TODO add your handling code here:
+        frecA = jTextField1.getText();
+        rad.setFrecA(frecA);
         
-         rad.guardar(Integer.parseInt(jTextField2.getText()),(Float.parseFloat(rad.getFrecA())));
+        rad.guardarEstacionActual(Integer.parseInt(jTextField2.getText()));
          
          //System.out.println(Integer.parseInt(jButton19.getText()));
        
@@ -250,6 +262,12 @@ public class GUI extends javax.swing.JFrame {
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+            // TODO add your handling code here:
+        System.out.println(rad.mostrarEstacion());
+        jTextField1.setText(rad.mostrarEstacion());
+    }//GEN-LAST:event_jButton6ActionPerformed
     
     /**
      * @param args the command line arguments
