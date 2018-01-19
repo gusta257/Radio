@@ -16,6 +16,7 @@ public class Radio implements RadioI {
     private String frecuenciaA= " ";
     private String eFrec;
     private String[] botones= new String[12];
+    private int pos =0;
     
 
 public String cambioFrecuencia(){
