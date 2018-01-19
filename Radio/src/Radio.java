@@ -101,11 +101,11 @@ public String cambioFrecuencia(){//hola
  
     
      public void guardarEstacionActual(int pos){
-        
+         botones[pos-1]=frecA;
     }
     
     public String obtenerEstacion(int pos){
-        String estacion = botones[pos];
+        String estacion = botones[pos-1];
         return estacion;
     }
     
@@ -130,10 +130,14 @@ public String cambioFrecuencia(){//hola
         return estado;
     }
     public void guardar(int posicion, String frecuenciaA){
-        if(posicion<11){
-            botones[posicion] = frecuenciaA;
-        }
-        
+        botones[posicion] = frecuenciaA;
+    }
+     public String getFrecA() {
+        return frecA;
+    }
+
+    public void setFrecA(String frecA) {
+        this.frecA = frecA;
     }
     
 }

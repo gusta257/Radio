@@ -175,10 +175,20 @@ public class GUI extends javax.swing.JFrame {
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, 20));
 
         jTextField2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 180, 50));
 
         jButton19.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton19.setText("Guardar");
+        jButton19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton19ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 140, 180, 50));
 
         pack();
@@ -197,10 +207,8 @@ public class GUI extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-       if(jCheckBox1.isSelected()){
-           rad.guardar(jButton5.getComponentCount(), jTextField1.getSelectedText());
-       }else jTextField1.setText(rad.mostrarEstacion());
-        
+        System.out.println("holas");
+        System.out.println(jTextField2.getText());
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -229,6 +237,19 @@ public class GUI extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+        // TODO add your handling code here:
+        
+         rad.guardar(Integer.parseInt(jTextField2.getText()),(Float.parseFloat(rad.getFrecA())));
+         
+         //System.out.println(Integer.parseInt(jButton19.getText()));
+       
+    }//GEN-LAST:event_jButton19ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
     
     /**
      * @param args the command line arguments
