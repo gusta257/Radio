@@ -68,6 +68,7 @@ public class GUI extends javax.swing.JFrame {
 
         btnOFF.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnOFF.setText("OFF");
+        btnOFF.setEnabled(false);
         btnOFF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnOFFActionPerformed(evt);
@@ -75,6 +76,7 @@ public class GUI extends javax.swing.JFrame {
         });
         getContentPane().add(btnOFF, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 10, 60, 40));
 
+        tfEstacion.setEditable(false);
         tfEstacion.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         tfEstacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -85,6 +87,7 @@ public class GUI extends javax.swing.JFrame {
 
         btnAtras.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         btnAtras.setText("<");
+        btnAtras.setEnabled(false);
         btnAtras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAtrasActionPerformed(evt);
@@ -94,6 +97,7 @@ public class GUI extends javax.swing.JFrame {
 
         btnAdelante.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         btnAdelante.setText(">");
+        btnAdelante.setEnabled(false);
         btnAdelante.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAdelanteActionPerformed(evt);
@@ -103,6 +107,7 @@ public class GUI extends javax.swing.JFrame {
 
         btn1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         btn1.setText("1");
+        btn1.setEnabled(false);
         btn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn1ActionPerformed(evt);
@@ -112,6 +117,7 @@ public class GUI extends javax.swing.JFrame {
 
         btn2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         btn2.setText("2");
+        btn2.setEnabled(false);
         btn2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn2ActionPerformed(evt);
@@ -121,6 +127,7 @@ public class GUI extends javax.swing.JFrame {
 
         btn3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         btn3.setText("3");
+        btn3.setEnabled(false);
         btn3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn3ActionPerformed(evt);
@@ -130,6 +137,7 @@ public class GUI extends javax.swing.JFrame {
 
         btn4.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         btn4.setText("4");
+        btn4.setEnabled(false);
         btn4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn4ActionPerformed(evt);
@@ -139,6 +147,7 @@ public class GUI extends javax.swing.JFrame {
 
         btn5.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         btn5.setText("5");
+        btn5.setEnabled(false);
         btn5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn5ActionPerformed(evt);
@@ -148,6 +157,7 @@ public class GUI extends javax.swing.JFrame {
 
         btn6.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         btn6.setText("6");
+        btn6.setEnabled(false);
         btn6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn6ActionPerformed(evt);
@@ -157,6 +167,7 @@ public class GUI extends javax.swing.JFrame {
 
         btn7.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         btn7.setText("7");
+        btn7.setEnabled(false);
         btn7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn7ActionPerformed(evt);
@@ -166,6 +177,7 @@ public class GUI extends javax.swing.JFrame {
 
         btn8.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         btn8.setText("8");
+        btn8.setEnabled(false);
         btn8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn8ActionPerformed(evt);
@@ -175,6 +187,7 @@ public class GUI extends javax.swing.JFrame {
 
         btn9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         btn9.setText("9");
+        btn9.setEnabled(false);
         btn9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn9ActionPerformed(evt);
@@ -184,6 +197,7 @@ public class GUI extends javax.swing.JFrame {
 
         btn10.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         btn10.setText("10");
+        btn10.setEnabled(false);
         btn10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btn10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -194,6 +208,7 @@ public class GUI extends javax.swing.JFrame {
 
         btn11.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         btn11.setText("11");
+        btn11.setEnabled(false);
         btn11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn11ActionPerformed(evt);
@@ -203,6 +218,7 @@ public class GUI extends javax.swing.JFrame {
 
         btn12.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         btn12.setText("12");
+        btn12.setEnabled(false);
         btn12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn12ActionPerformed(evt);
@@ -212,6 +228,7 @@ public class GUI extends javax.swing.JFrame {
 
         btnAM.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         btnAM.setText("AM");
+        btnAM.setEnabled(false);
         btnAM.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAMActionPerformed(evt);
@@ -221,6 +238,7 @@ public class GUI extends javax.swing.JFrame {
 
         btnFM.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         btnFM.setText("FM");
+        btnFM.setEnabled(false);
         btnFM.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnFMActionPerformed(evt);
@@ -233,6 +251,7 @@ public class GUI extends javax.swing.JFrame {
         jLabel1.setVerifyInputWhenFocusTarget(false);
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, 20));
 
+        tfLugar.setEditable(false);
         tfLugar.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         tfLugar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -243,6 +262,7 @@ public class GUI extends javax.swing.JFrame {
 
         btnGuardar.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         btnGuardar.setText("Guardar");
+        btnGuardar.setEnabled(false);
         btnGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGuardarActionPerformed(evt);
