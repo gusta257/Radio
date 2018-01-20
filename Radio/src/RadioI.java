@@ -6,7 +6,10 @@
 
 /**
  *
- * @author Gustavo
+ * @author Gustavo De Leon 17085
+ * @author Luis Esturban 17256
+ * Algoritmos y Estructura de Datos
+ * 19/01/2018
  */
 public interface RadioI {
     public String frecAdelante();

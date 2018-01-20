@@ -6,7 +6,10 @@
 
 /**
  *
- * @author Luis
+ * @author Gustavo De Leon 17085
+ * @author Luis Esturban 17256
+ * Algoritmos y Estructura de Datos
+ * 19/01/2018
  */
 public class GUI extends javax.swing.JFrame {
     private Radio rad;
@@ -254,12 +257,57 @@ public class GUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         rad.apagar();
         tfEstacion.setText("");
+        btn1.setEnabled(false);
+        btn2.setEnabled(false);
+        btn3.setEnabled(false);
+        btn4.setEnabled(false);
+        btn5.setEnabled(false);
+        btn6.setEnabled(false);
+        btn7.setEnabled(false);
+        btn8.setEnabled(false);
+        btn9.setEnabled(false);
+        btn10.setEnabled(false);
+        btn11.setEnabled(false);
+        btn12.setEnabled(false);
+        btnAdelante.setEnabled(false);
+        btnAtras.setEnabled(false);
+        btnFM.setEnabled(false);
+        btnAM.setEnabled(false);
+        btnGuardar.setEnabled(false);
+        btnOFF.setEnabled(false);
+        btnON.setEnabled(true);
+        tfLugar.setEnabled(false);
+        tfEstacion.setEnabled(false);
+   
+        
+        
     }//GEN-LAST:event_btnOFFActionPerformed
 
     private void btnONActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnONActionPerformed
         // TODO add your handling code here:
         rad.prender();
         tfEstacion.setText(rad.cambioFrecuencia());
+        btn1.setEnabled(true);
+        btn2.setEnabled(true);
+        btn3.setEnabled(true);
+        btn4.setEnabled(true);
+        btn5.setEnabled(true);
+        btn6.setEnabled(true);
+        btn7.setEnabled(true);
+        btn8.setEnabled(true);
+        btn9.setEnabled(true);
+        btn10.setEnabled(true);
+        btn11.setEnabled(true);
+        btn12.setEnabled(true);
+        btnAdelante.setEnabled(true);
+        btnAtras.setEnabled(true);
+        btnFM.setEnabled(true);
+        btnAM.setEnabled(true);
+        btnGuardar.setEnabled(true);
+        btnOFF.setEnabled(true);
+        btnON.setEnabled(false);
+         tfLugar.setEnabled(true);
+        tfEstacion.setEnabled(true);
     }//GEN-LAST:event_btnONActionPerformed
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
