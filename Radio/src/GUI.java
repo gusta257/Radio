@@ -251,7 +251,6 @@ public class GUI extends javax.swing.JFrame {
         jLabel1.setVerifyInputWhenFocusTarget(false);
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, 20));
 
-        tfLugar.setEditable(false);
         tfLugar.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         tfLugar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
