@@ -296,8 +296,8 @@ public class GUI extends javax.swing.JFrame {
         btnGuardar.setEnabled(false);
         btnOFF.setEnabled(false);
         btnON.setEnabled(true);
-        tfLugar.setEnabled(false);
-        tfEstacion.setEnabled(false);
+        //tfLugar.setEnabled(false);
+        //tfEstacion.setEnabled(false);
    
         
         
@@ -326,8 +326,8 @@ public class GUI extends javax.swing.JFrame {
         btnGuardar.setEnabled(true);
         btnOFF.setEnabled(true);
         btnON.setEnabled(false);
-         tfLugar.setEnabled(true);
-        tfEstacion.setEnabled(true);
+        //tfLugar.setEnabled(true);
+        //tfEstacion.setEnabled(true);
     }//GEN-LAST:event_btnONActionPerformed
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
